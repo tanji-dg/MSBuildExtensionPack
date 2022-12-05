@@ -469,7 +469,7 @@ namespace MSBuild.ExtensionPack.Framework
                 sortedItems.Add(item.ItemSpec);
             }
 
-            sortedItems.Sort();
+            sortedItems.Sort(StringComparer.Ordinal);
             foreach (string s in sortedItems)
             {
                 foreach (ITaskItem item in this.InputItems1)
