@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <CodeAnalysisOverrideRuleVisibilities>true</CodeAnalysisOverrideRuleVisibilities>
     <ProjectType>Local</ProjectType>
@@ -37,7 +37,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <DelaySign>true</DelaySign>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
@@ -77,6 +77,7 @@
     <CodeAnalysisRules>
     </CodeAnalysisRules>
     <CodeAnalysisRuleSet>..\Common\MSBuild.ExtensionPack.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>..\BuildBinaries\</OutputPath>
@@ -101,6 +102,7 @@
     <CodeAnalysisRules>
     </CodeAnalysisRules>
     <CodeAnalysisRuleSet>..\Common\MSBuild.ExtensionPack.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.COMAdmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=10d297e8e737fe34, processorArchitecture=MSIL" />
